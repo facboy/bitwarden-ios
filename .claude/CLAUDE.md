@@ -191,6 +191,16 @@ typos                                   # Spell check
 
 See `build-test-verify` skill for project generation, build commands, test execution, lint, format, code generation, common failures, and debug tips.
 
+## Delivery Workflow
+
+**You MUST use the following skills for code delivery tasks** — invoke via the Skill tool:
+
+- **Before committing**: Run `perform-ios-preflight-checklist` to verify architecture, security, testing, and style compliance
+- **When committing**: Use `committing-ios-changes` for commit message format, staging guidance, and commit creation
+- **When creating a PR**: Use `creating-ios-pull-request` for PR title/body format, draft creation, and AI review label prompt
+- **When labeling a PR**: Use `labeling-ios-changes` for change type (`t:*`) and app context (`app:*`) label selection
+- **When reviewing code**: Use `reviewing-changes` for architecture, style, compilation, testing, and security review
+
 ## References
 
 - `Docs/Architecture.md` — Architecture patterns and principles (authoritative)
